@@ -8,6 +8,6 @@
 			<xsd:element name="type" type="xsd:string" />
 		</xsd:sequence>
 	</xsd:complexType>
-	<xsd:element name="Cache" type="tCacheProperties" />
+	<xsd:element name="CacheProperties" type="tCacheProperties" />
 	
 </xsd:schema>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceTemplate 	id="Verigraph_NodeType" 
+					name="Verigraph NodeType Definition"
+					targetNamespace="http://www.example.com/servicetemplates/ToscaVerigraph"
+					schemaLocation="./TOSCA_schema.xsd"
+  					xmlns="http://docs.oasis-open.org/tosca/ns/2011/12"
+					xmlns:ns1="http://docs.oasis-open.org/tosca/ns/2011/12/types/AntispamProperties"
+					xmlns:ns2="http://docs.oasis-open.org/tosca/ns/2011/12/types/CacheProperties"
+					xmlns:ns3="http://docs.oasis-open.org/tosca/ns/2011/12/types/DpiProperties"
+					xmlns:ns4="http://docs.oasis-open.org/tosca/ns/2011/12/types/EndhostProperties"> 
+					<!-- lista namespace da completare  --> 
+					
+					<!-- quale schemaLocation mettere per validare contro TOSCA_schema.xsd ??
+						schemaLocation="http://docs.oasis-open.org/tosca/ns/2011/12" 
+						schemaLocation="./TOSCA_schema.xsd" -->
+
+<Import importType="http://www.w3.org/2001/XMLSchema"
+		location="../types/antispam.xsd" 
+		namespace="http://docs.oasis-open.org/tosca/ns/2011/12/types/AntispamProperties"/>					
+
+<Import importType="http://www.w3.org/2001/XMLSchema"
+		location="../types/cache.xsd" 
+		namespace="http://docs.oasis-open.org/tosca/ns/2011/12/types/CacheProperties"/>	
+		
+<Import importType="http://www.w3.org/2001/XMLSchema"
+		location="../types/dpi.xsd" 
+		namespace="http://docs.oasis-open.org/tosca/ns/2011/12/types/DpiProperties"/>	
+		
+<Import importType="http://www.w3.org/2001/XMLSchema"
+		location="../types/endhost.xsd" 
+		namespace="http://docs.oasis-open.org/tosca/ns/2011/12/types/EndhostProperties"/>
+<!-- lista import da completare  --> 
+
+<NodeTypes>
+    <NodeType id="AntispamType" name="Antispam" targetNamespace="http://docs.oasis-open.org/tosca/ns/2011/12">
+      <NodeTypeProperties element="ns1:AntispamProperties"/>
+    </NodeType>
+    
+    <NodeType id="CacheType" name="Cache" targetNamespace="http://docs.oasis-open.org/tosca/ns/2011/12">
+      <NodeTypeProperties element="ns2:CacheProperties"/>
+	</NodeType>
+	
+    <NodeType id="DpiType" name="DPI" targetNamespace="http://docs.oasis-open.org/tosca/ns/2011/12">
+      <NodeTypeProperties element="ns3:DpiProperties"/>
+    </NodeType>
+    
+    <NodeType id="EndhostType" name="Endhost" targetNamespace="http://docs.oasis-open.org/tosca/ns/2011/12">
+      <NodeTypeProperties element="ns4:EndhostProperties"/>
+	</NodeType>
+	<!-- lista NodeType da completare  --> 
+	
+</NodeTypes>
+					
+</ServiceTemplate>

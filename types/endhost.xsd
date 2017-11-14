@@ -24,6 +24,6 @@
 			<xsd:element name="destination" type="xsd:string" />
 		</xsd:sequence>
 	</xsd:complexType>
-	<xsd:element name="Endhost" type="tEndhostProperties" />
+	<xsd:element name="EndhostProperties" type="tEndhostProperties" />
 	
 </xsd:schema>

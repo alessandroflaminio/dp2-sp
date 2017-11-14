@@ -8,6 +8,6 @@
 			<xsd:element name="type" type="xsd:string" />
 		</xsd:sequence>
 	</xsd:complexType>
-	<xsd:element name="Antispam" type="tAntispamProperties" />
+	<xsd:element name="AntispamProperties" type="tAntispamProperties" />
 	
 </xsd:schema>
