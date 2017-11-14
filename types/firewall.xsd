@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://docs.oasis-open.org/tosca/ns/2011/12/types/FirewallProperties" xmlns="http://docs.oasis-open.org/tosca/ns/2011/12/types/FirewallProperties">
+
+  <xs:complexType name="tFirewallProperties">
+    <xs:sequence>
+      <xs:element name="elements">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="source" type="xsd:string" />
+              <xs:element name="destination" type="xsd:string" />
+            </xs:sequence>
+          </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  <xs:complexType>
+
+  <xsd:element name="FirewallProperties" type="tFirewallProperties" />
+</xs:schema>

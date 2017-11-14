@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://docs.oasis-open.org/tosca/ns/2011/12/types/FieldModifierProperties" xmlns="http://docs.oasis-open.org/tosca/ns/2011/12/types/FieldModifierProperties">
+
+  <xs:complexType name="tFieldModifierProperties">
+    <xs:sequence>
+      <xs:element name="name" type="xsd:string" />
+    </xs:sequence>
+  <xs:complexType>
+
+  <xsd:element name="FieldModifierProperties" type="tFieldModifierProperties" />
+</xs:schema>
