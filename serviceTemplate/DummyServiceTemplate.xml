@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Definitions id="dummy"
+	targetNamespace="www.example.com/dummy"
+  	xmlns="http://docs.oasis-open.org/tosca/ns/2011/12"
+  	xmlns:ns1="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes/"
+  	xmlns:ns2="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/RelationshipTypes/">
+  	
+  	<Extensions>
+  		<Extension namespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes" mustUnderstand="yes" />
+  	</Extensions>
+  	
+  	<ServiceTemplate id="dummyTemplate">
+	  	<TopologyTemplate id="dummyTopology">
+	  		<NodeTemplate id="user1" name="Host" type="ns1:EndhostType">
+	  			<Properties>
+	  				<EndhostProperties protocol="HTTP_REQUEST" destination="webserver" body="sex" />
+	  			</Properties>
+	  		</NodeTemplate>
+	  		
+	  		<NodeTemplate id="nat" name="NAT" type="ns1:NatType">
+	  			<Properties>
+	  				<NatProperties>
+	  					<name>user1</name>
+	  				</NatProperties>
+	  			</Properties>
+	  		</NodeTemplate>
+
+			<NodeTemplate id="dpi" name="DPI" type="ns1:DpiType">
+				<Properties>
+					<DpiProperties>
+						<notAllowed>sex</notAllowed>
+						<notAllowed>droga</notAllowed>
+					</DpiProperties>
+				</Properties>
+			</NodeTemplate>
+			
+			<NodeTemplate id="webserver" name="Endpoint" type="ns1:Endpoint" />
+			
+			
+			<RelationshipTemplate id="user1ToNat" type="ns2:Linked_to">
+				<SourceElement ref="user1"/>
+				<TargetElement ref="nat"/>
+			</RelationshipTemplate>
+			
+			<RelationshipTemplate id="natToDpi" type="ns2:Linked_to">
+				<SourceElement ref="nat"/>
+				<TargetElement ref="dpi"/>
+			</RelationshipTemplate>
+			
+			<RelationshipTemplate id="dpiToWebserver" type="ns2:Linked_to">
+				<SourceElement ref="dpi"/>
+				<TargetElement ref="webserver"/>
+			</RelationshipTemplate>
+			
+	  	</TopologyTemplate>
+  	</ServiceTemplate>
+</Definitions>
