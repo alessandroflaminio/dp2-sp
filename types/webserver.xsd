@@ -5,7 +5,7 @@
 	
 	<xsd:complexType name="tWebserverProperties">
 		<xsd:sequence>
-			<xsd:element name="name" type="xsd:string" />
+			<xsd:element name="name" type="xsd:string" nillable="true" />
 		</xsd:sequence>
 	</xsd:complexType>
 	

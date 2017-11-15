@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
 <xsd:schema	xmlns="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes/FirewallProperties"
 			xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 			targetNamespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes/FirewallProperties"> 
@@ -16,28 +15,7 @@
       </xsd:element>
     </xsd:sequence>
   </xsd:complexType>
-=======
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-  targetNamespace="http://docs.oasis-open.org/tosca/ns/2011/12/types/FirewallProperties" xmlns="http://docs.oasis-open.org/tosca/ns/2011/12/types/FirewallProperties">
 
-  <xs:complexType name="tFirewallProperties">
-    <xs:sequence>
-      <xs:element name="elements">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="source" type="xs:string" />
-              <xs:element name="destination" type="xs:string" />
-            </xs:sequence>
-          </xs:complexType>
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
->>>>>>> branch 'master' of https://github.com/alessandroflaminio/dp2-sp
-
-<<<<<<< HEAD
   <xsd:element name="FirewallProperties" type="tFirewallProperties" />
 </xsd:schema>
-=======
-  <xs:element name="FirewallProperties" type="tFirewallProperties" />
-</xs:schema>
->>>>>>> branch 'master' of https://github.com/alessandroflaminio/dp2-sp
+

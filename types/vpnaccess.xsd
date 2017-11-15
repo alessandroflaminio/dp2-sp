@@ -4,7 +4,7 @@
 			targetNamespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes/VpnAccessProperties"> 
 	
 	<xsd:complexType name="tVpnAccessProperties">
-		<xsd:attribute name="vpnExit" type="xsd:string" />
+		<xsd:attribute name="vpnExit" type="xsd:string" use="required" />
 	</xsd:complexType>
 	
 	<xsd:element name="VpnAccessProperties" type="tVpnAccessProperties" />
