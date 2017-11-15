@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <xsd:schema	xmlns="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes/MailserverProperties"
 			xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 			targetNamespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes/MailserverProperties"> 
@@ -12,3 +13,16 @@
 	<xsd:element name="MailserverProperties" type="tMailserverProperties" />
 	
 </xsd:schema>
+=======
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://docs.oasis-open.org/tosca/ns/2011/12/types/MailServerProperties" xmlns="http://docs.oasis-open.org/tosca/ns/2011/12/types/MailServerProperties">
+
+  <xs:complexType name="tMailServerProperties">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+    
+  <xs:element name="MailServerProperties" type="tMailServerProperties" />
+</xs:schema>
+>>>>>>> branch 'master' of https://github.com/alessandroflaminio/dp2-sp
