@@ -4,9 +4,9 @@
 
   <xs:complexType name="tFieldModifierProperties">
     <xs:sequence>
-      <xs:element name="name" type="xsd:string" />
+      <xs:element name="name" type="xs:string" />
     </xs:sequence>
-  <xs:complexType>
+  </xs:complexType>
 
-  <xsd:element name="FieldModifierProperties" type="tFieldModifierProperties" />
+  <xs:element name="FieldModifierProperties" type="tFieldModifierProperties" />
 </xs:schema>
