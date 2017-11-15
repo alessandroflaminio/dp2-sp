@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema	xmlns="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraphNodeTypes/types/CacheProperties"
+<xsd:schema	xmlns="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes/CacheProperties"
 			xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-			targetNamespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraphNodeTypes/types/CacheProperties"> 
+			targetNamespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes/CacheProperties"> 
 	
 	<xsd:complexType name="tCacheProperties">
 		<xsd:sequence>
-			<xsd:element name="type" type="xsd:string" />
+			<xsd:element name="resource" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
 		</xsd:sequence>
 	</xsd:complexType>
 	<xsd:element name="CacheProperties" type="tCacheProperties" />

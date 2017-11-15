@@ -1,29 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema	xmlns="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraphNodeTypes/types/EndhostProperties"
+<xsd:schema	xmlns="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes/EndhostProperties"
 			xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-			targetNamespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraphNodeTypes/types/EndhostProperties"> 
+			targetNamespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes/EndhostProperties"> 
 	
 	<xsd:complexType name="tEndhostProperties">
-		<xsd:sequence>
-			<xsd:element name="type" type="xsd:string" />
-			<xsd:element name="body" type="xsd:string" />
-			<xsd:element name="sequence" type="xsd:integer" />
-			<xsd:element name="protocol">
-				<xsd:simpleType>
-			   		<xsd:restriction base="xsd:string">
-			   			<xsd:enumeration value="HTTP_REQUEST"/>
-			      		<xsd:enumeration value="HTTP_RESPONSE"/>
-			      		<xsd:enumeration value="POP3_REQUEST"/>
-			      		<xsd:enumeration value="POP3_RESPONSE"/>
-			    	</xsd:restriction>
-			  	</xsd:simpleType>
-			</xsd:element>
-			<xsd:element name="email_from" type="xsd:string" />
-			<xsd:element name="url" type="xsd:string" />
-			<xsd:element name="options" type="xsd:string" />
-			<xsd:element name="destination" type="xsd:string" />
-		</xsd:sequence>
+		<xsd:attribute name="body" type="xsd:string" />
+		<xsd:attribute name="sequence" type="xsd:integer" />
+		<xsd:attribute name="protocol">
+			<xsd:simpleType>
+			   	<xsd:restriction base="xsd:string">
+			   		<xsd:enumeration value="HTTP_REQUEST"/>
+			   		<xsd:enumeration value="HTTP_RESPONSE"/>
+		      		<xsd:enumeration value="POP3_REQUEST"/>
+		      		<xsd:enumeration value="POP3_RESPONSE"/>
+		 	  	</xsd:restriction>
+		  	</xsd:simpleType>
+		</xsd:attribute>
+		<xsd:attribute name="email_from" type="xsd:string" />
+		<xsd:attribute name="url" type="xsd:string" />
+		<xsd:attribute name="options" type="xsd:string" />
+		<xsd:attribute name="destination" type="xsd:string" />
 	</xsd:complexType>
+	
 	<xsd:element name="EndhostProperties" type="tEndhostProperties" />
 	
 </xsd:schema>

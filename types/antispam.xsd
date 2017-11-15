@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema	xmlns="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraphNodeTypes/types/AntispamProperties"
+<xsd:schema	xmlns="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes/AntispamProperties"
 			xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-			targetNamespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraphNodeTypes/types/AntispamProperties"> 
+			targetNamespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes/AntispamProperties"> 
 	
 	<xsd:complexType name="tAntispamProperties">
 		<xsd:sequence>
-			<xsd:element name="type" type="xsd:string" />
+			<xsd:element name="spamSource" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
 		</xsd:sequence>
 	</xsd:complexType>
+	
 	<xsd:element name="AntispamProperties" type="tAntispamProperties" />
 	
 </xsd:schema>

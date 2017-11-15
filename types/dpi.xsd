@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd:schema	xmlns="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraphNodeTypes/types/DpiProperties"
+<xsd:schema	xmlns="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes/DpiProperties"
 			xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-			targetNamespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraphNodeTypes/types/DpiProperties"> 
+			targetNamespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes/DpiProperties"> 
 	
 	<xsd:complexType name="tDpiProperties">
 		<xsd:sequence>
-			<xsd:element name="type" type="xsd:string" />
+			<xsd:element name="notAllowed" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
 		</xsd:sequence>
 	</xsd:complexType>
 	<xsd:element name="DpiProperties" type="tDpiProperties" />
