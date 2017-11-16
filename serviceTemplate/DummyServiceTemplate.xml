@@ -37,17 +37,17 @@
 			<NodeTemplate id="webserver" name="Endpoint" type="ns1:Endpoint" />
 			
 			
-			<RelationshipTemplate id="user1ToNat" type="ns2:Linked_to">
+			<RelationshipTemplate id="user1ToNat" type="ns2:linkedTo">
 				<SourceElement ref="user1"/>
 				<TargetElement ref="nat"/>
 			</RelationshipTemplate>
 			
-			<RelationshipTemplate id="natToDpi" type="ns2:Linked_to">
+			<RelationshipTemplate id="natToDpi" type="ns2:linkedTo">
 				<SourceElement ref="nat"/>
 				<TargetElement ref="dpi"/>
 			</RelationshipTemplate>
 			
-			<RelationshipTemplate id="dpiToWebserver" type="ns2:Linked_to">
+			<RelationshipTemplate id="dpiToWebserver" type="ns2:linkedTo">
 				<SourceElement ref="dpi"/>
 				<TargetElement ref="webserver"/>
 			</RelationshipTemplate>

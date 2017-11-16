@@ -138,7 +138,7 @@
 	<PropertiesDefinition element="ns14:WebserverProperties" type="ns14:tWebserverProperties"/>
 </NodeType>
 
-<RelationshipType name="linked_to" targetNamespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/RelationshipTypes"/>
+<RelationshipType name="linkedTo" targetNamespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/RelationshipTypes"/>
 
 			
 </Definitions>
