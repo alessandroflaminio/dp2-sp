@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Definitions	 	id="Verigraph_Definitions" 
+					name="Verigraph NodeType Definition"
+					targetNamespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraphDefinition"
+					xmlns:tns="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes"	
+					
+					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+					xsi:schemaLocation="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes ./TOSCA_schema.xsd">
+					
+	<import importType="http://www.w3.org/2001/XMLSchema"
+		namespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes"
+		location="./ToscaTypes.xsd"/>
+
+	<NodeType name="AntispamType">
+		<PropertiesDefinition  type="tns:tAntispamProperties"/>
+	</NodeType>
+    
+	<NodeType name="CacheType">
+		<PropertiesDefinition type="tns:tCacheProperties"/>
+	</NodeType>
+	
+	<NodeType name="DpiType">
+		<PropertiesDefinition type="tns:tDpiProperties"/>
+	</NodeType>
+    
+	<NodeType name="EndhostType">
+		<PropertiesDefinition type="tns:tEndhostProperties"/>
+	</NodeType>
+
+	<NodeType name="EndpointType">
+		<PropertiesDefinition type="tns:tEndpointProperties"/>
+	</NodeType>
+
+	<NodeType name="FieldModifierType">
+		<PropertiesDefinition type="tns:tFieldModifierProperties"/>
+	</NodeType>
+
+	<NodeType name="FirewallType">
+		<PropertiesDefinition type="tns:tFirewallProperties"/>
+	</NodeType>
+
+	<NodeType name="MailclientType">
+		<PropertiesDefinition type="tns:tMailclientProperties"/>
+	</NodeType>
+
+	<NodeType name="MailserverType">
+		<PropertiesDefinition type="tns:tMailserverProperties"/>
+	</NodeType>
+
+	<NodeType name="NatType">
+		<PropertiesDefinition type="tns:tNatProperties"/>
+	</NodeType>
+
+	<NodeType name="VpnAccessType">
+		<PropertiesDefinition type="tns:tVpnAccessProperties"/>
+	</NodeType>
+
+	<NodeType name="VpnExitType">
+		<PropertiesDefinition type="tns:tVpnExitProperties"/>
+	</NodeType>
+
+	<NodeType name="WebclientType">
+		<PropertiesDefinition type="tns:tWebclientProperties"/>
+	</NodeType>
+
+	<NodeType name="WebserverType">
+		<PropertiesDefinition type="tns:tWebserverProperties"/>
+	</NodeType>
+
+	<RelationshipType name="linkedTo"/>
+			
+</Definitions>
