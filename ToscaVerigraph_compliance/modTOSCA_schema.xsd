@@ -9,22 +9,9 @@
 <xs:schema targetNamespace="http://docs.oasis-open.org/tosca/ns/2011/12" elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns="http://docs.oasis-open.org/tosca/ns/2011/12" xmlns:xs="http://www.w3.org/2001/XMLSchema">
  <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>
  
- <!-- INIZIO MODIFICHE AL TOSCA.xsd -->
- <xs:import namespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes/AntispamProperties" schemaLocation="../types/antispam.xsd" />
- <xs:import namespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes/CacheProperties" schemaLocation="../types/cache.xsd" />
- <xs:import namespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes/DpiProperties" schemaLocation="../types/dpi.xsd" />
- <xs:import namespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes/EndhostProperties" schemaLocation="../types/endhost.xsd" />
- <xs:import namespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes/EndpointProperties" schemaLocation="../types/endpoint.xsd" />
- <xs:import namespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes/FieldModifierProperties" schemaLocation="../types/fieldmodifier.xsd" />
- <xs:import namespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes/FirewallProperties" schemaLocation="../types/firewall.xsd" />
- <xs:import namespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes/MailclientProperties" schemaLocation="../types/mailclient.xsd" />
- <xs:import namespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes/MailserverProperties" schemaLocation="../types/mailserver.xsd" />
- <xs:import namespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes/NatProperties" schemaLocation="../types/nat.xsd" />
- <xs:import namespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes/VpnAccessProperties" schemaLocation="../types/vpnaccess.xsd" />
- <xs:import namespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes/VpnExitProperties" schemaLocation="../types/vpnexit.xsd" />
- <xs:import namespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes/WebclientProperties" schemaLocation="../types/webclient.xsd" />
- <xs:import namespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes/WebserverProperties" schemaLocation="../types/webserver.xsd" />
- <!-- FINE MODIFICHE AL TOSCA.xsd -->
+	<!-- INIZIO MODIFICHE AL TOSCA.xsd -->
+	 <xs:import namespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes" schemaLocation="./ToscaTypes.xsd" />
+	<!-- FINE MODIFICHE AL TOSCA.xsd -->
   
  <xs:element name="documentation" type="tDocumentation"/>
  <xs:complexType name="tDocumentation" mixed="true">
