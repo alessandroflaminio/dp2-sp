@@ -7,6 +7,7 @@
   	
   	<Extensions>
   		<Extension namespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes" mustUnderstand="yes" />
+  		<Extension namespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/RelationshipTypes" mustUnderstand="yes" />
   	</Extensions>
   	
   	<ServiceTemplate id="dummyTemplate">
