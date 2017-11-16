@@ -13,7 +13,7 @@
 
 	<Import importType="http://www.w3.org/2001/XMLSchema"
 		namespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraphDefinition"
-		location="./ToscaVerigraphDefinitions.xml"/>
+		location="../ToscaVerigraph_compliance/ToscaVerigraphDefinitions.xml"/>
 
 
 <ServiceTemplate id="dummyTemplate">

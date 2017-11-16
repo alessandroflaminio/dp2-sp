@@ -2,69 +2,69 @@
 <Definitions	 	id="Verigraph_Definitions" 
 					name="Verigraph NodeType Definition"
 					targetNamespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraphDefinition"
-					xmlns:my="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes"	
+					xmlns:tns="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes"	
+					
 					xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-					xsi:schemaLocation="./TOSCA_schema.xsd">
-			
-		
+					xsi:schemaLocation="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes ./TOSCA_schema.xsd">
+					
 	<import importType="http://www.w3.org/2001/XMLSchema"
 		namespace="http://docs.oasis-open.org/tosca/ns/2011/12/ToscaVerigraph/NodeTypes"
-		location="../types/allTypes.xsd"/>
+		location="./ToscaTypes.xsd"/>
 
 	<NodeType name="AntispamType">
-		<PropertiesDefinition  type="my:tAntispamProperties"/>
+		<PropertiesDefinition  type="tns:tAntispamProperties"/>
 	</NodeType>
     
 	<NodeType name="CacheType">
-		<PropertiesDefinition type="my:tCacheProperties"/>
+		<PropertiesDefinition type="tns:tCacheProperties"/>
 	</NodeType>
 	
 	<NodeType name="DpiType">
-		<PropertiesDefinition type="my:tDpiProperties"/>
+		<PropertiesDefinition type="tns:tDpiProperties"/>
 	</NodeType>
     
 	<NodeType name="EndhostType">
-		<PropertiesDefinition type="my:tEndhostProperties"/>
+		<PropertiesDefinition type="tns:tEndhostProperties"/>
 	</NodeType>
 
 	<NodeType name="EndpointType">
-		<PropertiesDefinition type="my:tEndpointProperties"/>
+		<PropertiesDefinition type="tns:tEndpointProperties"/>
 	</NodeType>
 
 	<NodeType name="FieldModifierType">
-		<PropertiesDefinition type="my:tFieldModifierProperties"/>
+		<PropertiesDefinition type="tns:tFieldModifierProperties"/>
 	</NodeType>
 
 	<NodeType name="FirewallType">
-		<PropertiesDefinition type="my:tFirewallProperties"/>
+		<PropertiesDefinition type="tns:tFirewallProperties"/>
 	</NodeType>
 
 	<NodeType name="MailclientType">
-		<PropertiesDefinition type="my:tMailclientProperties"/>
+		<PropertiesDefinition type="tns:tMailclientProperties"/>
 	</NodeType>
 
 	<NodeType name="MailserverType">
-		<PropertiesDefinition type="my:tMailserverProperties"/>
+		<PropertiesDefinition type="tns:tMailserverProperties"/>
 	</NodeType>
 
 	<NodeType name="NatType">
-		<PropertiesDefinition type="my:tNatProperties"/>
+		<PropertiesDefinition type="tns:tNatProperties"/>
 	</NodeType>
 
 	<NodeType name="VpnAccessType">
-		<PropertiesDefinition type="my:tVpnAccessProperties"/>
+		<PropertiesDefinition type="tns:tVpnAccessProperties"/>
 	</NodeType>
 
 	<NodeType name="VpnExitType">
-		<PropertiesDefinition type="my:tVpnExitProperties"/>
+		<PropertiesDefinition type="tns:tVpnExitProperties"/>
 	</NodeType>
 
 	<NodeType name="WebclientType">
-		<PropertiesDefinition type="my:tWebclientProperties"/>
+		<PropertiesDefinition type="tns:tWebclientProperties"/>
 	</NodeType>
 
 	<NodeType name="WebserverType">
-		<PropertiesDefinition type="my:tWebserverProperties"/>
+		<PropertiesDefinition type="tns:tWebserverProperties"/>
 	</NodeType>
 
 	<RelationshipType name="linkedTo"/>
